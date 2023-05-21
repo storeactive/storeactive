@@ -1,0 +1,16 @@
+{
+  "name": "@storeactive/core",
+  "version": "0.0.0",
+  "description": "The core functioning part of the storeactive module(s).",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --minify",
+    "build": "tsup src/index.ts --dts --minify --format esm,cjs",
+    "lint:types": "tsc"
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0"
+  }
+}

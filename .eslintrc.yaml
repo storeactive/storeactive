@@ -1,0 +1,16 @@
+root: true
+env:
+  node: true
+ignorePatterns:
+  - "node_modules"
+  - "dist"
+
+plugins: ["@typescript-eslint"]
+extends:
+  - "eslint:recommended"
+  - "airbnb"
+  - "plugin:import/typescript"
+  - "plugin:@typescript-eslint/recommended"
+  - "prettier"
+
+parser: "@typescript-eslint/parser"
